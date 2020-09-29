@@ -1,6 +1,6 @@
 # 実行
 
-node test.js
+node sample.js
 
 # 参考
 

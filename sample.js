@@ -13,6 +13,7 @@ const playwright = require('playwright');
   await page.goto('https://www.google.com/');
 
   await page.type('[name=q]', 'playwright');
+
   await page.keyboard.press('Enter', {delay: 2000});
 
   await page.screenshot({path: `./sample-screenshot.png`});
