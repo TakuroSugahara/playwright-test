@@ -15,7 +15,8 @@ afterEach(async () => {
   await page.close();
 });
 
-it('should work', async () => {
+it('signin test', async () => {
+  // 試したいサイトのURL, ユーザー、パスワード、ログイン後のページタイトルに変更すればテストを実行できます
   const signinURL = 'https://sample.com/signin';
   const email = 'sample@gmail.com';
   const password = 'sample-password';
@@ -27,6 +28,5 @@ it('should work', async () => {
   await page.keyboard.press('Enter');
 
   await page.waitForNavigation({waitUntil: 'networkidle'});
-  console.log(await page.title());
   expect(await page.title()).toBe(expectedTitle);
 });
