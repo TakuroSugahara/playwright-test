@@ -1,6 +1,10 @@
 # 実行
 
-node sample.js
+playwright のお試し
+`node sample.js`
+
+playwright + jest を使って e2e テスト
+`npm run test`
 
 # 参考
 
