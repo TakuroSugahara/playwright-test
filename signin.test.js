@@ -12,8 +12,7 @@ beforeEach(async () => {
   page = await browser.newPage();
 });
 afterEach(async () => {
-  console.log('Done.');
-  // await page.close();
+  await page.close();
 });
 
 it('should work', async () => {
